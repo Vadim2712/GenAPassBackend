@@ -11,15 +11,22 @@ namespace GenAPassBackend.Models
         public int Id { get; set; }
 
         [Column("email", TypeName = "text")]
+        [Required]
         public string Email { get; set; }
 
         [Column("hash", TypeName = "int(11)")]
+        [Required]
         public int Hash { get; set; }
 
-        [Column("create", TypeName = "text")]
+        [Column("create_at", TypeName = "text")]
+        [Required]
         public DateTime CreatedAt { get; set; }
         
-        [Column("active", TypeName = "text")]
+        [Column("active", TypeName = "TINYINT(1)")]
+        [Required] 
         public bool IsActive { get; set; }
+
+        public ICollection<UserService> UserServices { get; set; } = new List<UserService>();
+
     }
 }
