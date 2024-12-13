@@ -21,6 +21,10 @@ namespace GenAPassBackend.Models
         [Column("create_at", TypeName = "text")]
         [Required]
         public DateTime CreatedAt { get; set; }
+
+        [Column("login", TypeName = "Text")]
+        [Required]
+        public string Login { get; set; }
         
         [Column("active", TypeName = "TINYINT(1)")]
         [Required] 
