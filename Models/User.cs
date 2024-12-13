@@ -14,6 +14,9 @@ namespace GenAPassBackend.Models
         [Required]
         public string Email { get; set; }
 
+        [Column("icon_url", TypeName = "text")]
+        public string  IconUrl { get; set; }
+
         [Column("hash", TypeName = "int(11)")]
         [Required]
         public int Hash { get; set; }
@@ -21,10 +24,6 @@ namespace GenAPassBackend.Models
         [Column("create_at", TypeName = "text")]
         [Required]
         public DateTime CreatedAt { get; set; }
-
-        [Column("login", TypeName = "Text")]
-        [Required]
-        public string Login { get; set; }
         
         [Column("active", TypeName = "TINYINT(1)")]
         [Required] 
