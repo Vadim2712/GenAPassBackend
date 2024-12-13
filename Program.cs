@@ -1,9 +1,14 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
+
+builder.Services.AddControllers();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
