@@ -12,6 +12,10 @@ namespace GenAPassBackend.Models
         public DbSet<User> User { get; set; }
         public DbSet<UserService> UserServices { get; set; }
 
+        public DbSet<Service> Services { get; set; }
+
+        public DbSet<Settings> Settings { get; set; }
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         { }

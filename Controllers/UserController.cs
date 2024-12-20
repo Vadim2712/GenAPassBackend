@@ -1,7 +1,6 @@
 ﻿using GenAPassBackend.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations;
 using GenAPassBackend.DTOs;
 
 namespace GenAPassBackend.Controllers
