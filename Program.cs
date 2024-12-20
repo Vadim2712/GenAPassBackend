@@ -5,10 +5,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddControllers();
 
 var app = builder.Build();
-
-builder.Services.AddControllers();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
