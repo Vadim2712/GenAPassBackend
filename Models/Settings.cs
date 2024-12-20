@@ -12,7 +12,7 @@ namespace GenAPassBackend.Models
         public int Id { get; set; }
 
         [ForeignKey("user_id")]
-        public string UserId { get; set; }
+        public int UserId { get; set; }
         public User User { get; set; }
 
         [Column("theme", TypeName = "TINYINT(1)")]

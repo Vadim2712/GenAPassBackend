@@ -14,9 +14,6 @@ namespace GenAPassBackend.Models
         [Required]
         public string Email { get; set; }
 
-        [Column("icon_url", TypeName = "text")]
-        public string  IconUrl { get; set; }
-
         [Column("hash", TypeName = "int(11)")]
         [Required]
         public int Hash { get; set; }

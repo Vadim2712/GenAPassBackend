@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GenAPassBackend.Models
 {
-    [Table("user")]
+    [Table("userService")]
     public class UserService
     {
         [Key]
